@@ -38,4 +38,10 @@ test.describe('GoREST Enterprise Suite', () => {
     const id = fs.readFileSync(sharedIdPath, 'utf8');
     expect(await adminApi.users.get(id)).toBe(200);
   });
+
+  test('[Admin] POST /users - Reject invalid payload with 422 Unprocessable Entity', async ({ adminApi }) => {
+    test.skip(test.info().project.name !== 'Admin-Tests');
+    const { status } = await adminApi.users.create({ email: 'invalid-email' });
+    expect(status).toBe(422);
+  });
 });
