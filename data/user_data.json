@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Data-Driven User A",
+    "gender": "male",
+    "email": "testA1@example.com",
+    "status": "active"
+  },
+  {
+    "name": "Data-Driven User B",
+    "gender": "female",
+    "email": "testB2@example.com",
+    "status": "active"
+  }
+]
