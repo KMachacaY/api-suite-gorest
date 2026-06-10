@@ -18,4 +18,12 @@ test.describe('GoREST Enterprise Suite', () => {
     expect(status).toBe(201);
     fs.writeFileSync(sharedIdPath, body.id.toString());
   });
+
+  test('[Admin] GET /users - Validate schema contract integrity', async ({ adminApi }) => {
+    test.skip(test.info().project.name !== 'Admin-Tests');
+    const { body } = await adminApi.users.create({ 
+      name: "Jane Doe", gender: "female", email: `jane${Date.now()}@test.com`, status: "active" 
+    });
+    expect(validateUser(body)).toBe(true);
+  });
 });
