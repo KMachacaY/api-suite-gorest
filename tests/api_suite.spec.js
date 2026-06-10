@@ -26,4 +26,10 @@ test.describe('GoREST Enterprise Suite', () => {
     });
     expect(validateUser(body)).toBe(true);
   });
+
+  test('[Admin] GET /users/{id} - Verify resource persistence', async ({ adminApi }) => {
+    test.skip(test.info().project.name !== 'Admin-Tests');
+    const id = fs.readFileSync(sharedIdPath, 'utf8');
+    expect(await adminApi.users.get(id)).toBe(200);
+  });
 });
