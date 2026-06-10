@@ -1,0 +1,70 @@
+<testsuites id="" name="" tests="13" failures="0" skipped="6" errors="0" time="7.013489000000001">
+<testsuite name="auth.setup.js" timestamp="2026-06-10T21:11:55.185Z" hostname="setup" tests="1" failures="0" skipped="0" time="0.002" errors="0">
+<testcase name="Authenticate roles" classname="auth.setup.js" time="0.002">
+</testcase>
+</testsuite>
+<testsuite name="api_suite.spec.js" timestamp="2026-06-10T21:11:55.185Z" hostname="Admin-Tests" tests="6" failures="0" skipped="1" time="4.002" errors="0">
+<testcase name="GoREST Enterprise Suite › [Admin] POST /users - Create Data-Driven User A" classname="api_suite.spec.js" time="1.772">
+</testcase>
+<testcase name="GoREST Enterprise Suite › [Admin] POST /users - Create Data-Driven User B" classname="api_suite.spec.js" time="0.63">
+</testcase>
+<testcase name="GoREST Enterprise Suite › [Admin] GET /users - Validate schema contract integrity" classname="api_suite.spec.js" time="0.54">
+</testcase>
+<testcase name="GoREST Enterprise Suite › [Admin] GET /users/{id} - Verify resource persistence" classname="api_suite.spec.js" time="0.535">
+</testcase>
+<testcase name="GoREST Enterprise Suite › [Admin] POST /users - Reject invalid payload with 422 Unprocessable Entity" classname="api_suite.spec.js" time="0.522">
+</testcase>
+<testcase name="GoREST Enterprise Suite › [Standard User] DELETE /users/{id} - Mitigate OWASP BOLA security vulnerability" classname="api_suite.spec.js">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="api_suite.spec.js" timestamp="2026-06-10T21:11:55.185Z" hostname="Standard-User-Tests" tests="6" failures="0" skipped="5" time="1.438" errors="0">
+<testcase name="GoREST Enterprise Suite › [Admin] POST /users - Create Data-Driven User A" classname="api_suite.spec.js">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GoREST Enterprise Suite › [Admin] POST /users - Create Data-Driven User B" classname="api_suite.spec.js">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GoREST Enterprise Suite › [Admin] GET /users - Validate schema contract integrity" classname="api_suite.spec.js">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GoREST Enterprise Suite › [Admin] GET /users/{id} - Verify resource persistence" classname="api_suite.spec.js">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GoREST Enterprise Suite › [Admin] POST /users - Reject invalid payload with 422 Unprocessable Entity" classname="api_suite.spec.js">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="GoREST Enterprise Suite › [Standard User] DELETE /users/{id} - Mitigate OWASP BOLA security vulnerability" classname="api_suite.spec.js" time="1.416">
+</testcase>
+</testsuite>
+</testsuites>
