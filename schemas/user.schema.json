@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "User Schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "email": {
+      "type": "string",
+      "format": "email"
+    },
+    "gender": {
+      "type": "string",
+      "enum": ["male", "female"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "inactive"]
+    }
+  },
+  "required": ["id", "name", "email", "gender", "status"]
+}
