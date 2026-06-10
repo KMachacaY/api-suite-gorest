@@ -44,4 +44,12 @@ test.describe('GoREST Enterprise Suite', () => {
     const { status } = await adminApi.users.create({ email: 'invalid-email' });
     expect(status).toBe(422);
   });
+
+  test('[Standard User] DELETE /users/{id} - Mitigate OWASP BOLA security vulnerability', async ({ userApi }) => {
+    test.skip(test.info().project.name !== 'Standard-User-Tests');
+    const id = fs.readFileSync(sharedIdPath, 'utf8');
+    const status = await userApi.users.delete(id);
+    expect([401, 403]).toContain(status);
+    try { fs.unlinkSync(sharedIdPath); } catch (e) {}
+  });
 });
